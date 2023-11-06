@@ -54,7 +54,7 @@ body{
     align-items: flex-end;
 
 }
-.body-section {
+.whole-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +103,8 @@ body{
 }
 .footer-section {
     position: absolute;
-    bottom: 20px ;
+    border:1px solid blue;
+   bottom: 20px ;
     width: 100%; /* Make sure it spans the full width of the viewport. */
     text-align: center;
     color:white;
@@ -137,7 +138,7 @@ body{
 /* For landscape mode on mobile devices */
 @media (max-width: 896px) and (orientation: landscape) {
  
-.footer-section {
+.whole-section {
         position:absolute!important;
         margin-top:40px ;
         bottom: 20px !important;
@@ -215,4 +216,4 @@ body{
     .navbar-text{
         cursor: none;
     }
-} */ 
+} */

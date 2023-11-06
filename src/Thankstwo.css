@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+/* body { */
+/* background-color: brown; */
+    /* background-color: red; */
+    /* background-size: cover ;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif; /* Set your desired background color here */
+    /* margin: 0; */
+    /* padding: 0;  */
+    /* background-image: url('../src/Assets/web-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    padding: 0; */
+/* } */
+body {
+    /* background-color: brown; */
+    background-image: url('../src/Assets/web-bg.png');
+    background-size: cover;
+    /* background-size: auto ; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-size: contain; */
+    /* background-position: center; */
+    /* background-position: center; */
+
+
+
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage-container{
+   display:grid; 
+
+   /* dividing it into 4 coloumns */
+
+   /* usualy it is like 1fr 1fr 1fr 1fr */
+   /* grid-template-columns: 1.3fr 1.3fr 1.3fr ; */
+    height:100vh;
+    width:100%;
+   
+    /* dividing it into 4 rows */
+    grid-template-rows: 0.5fr 3.3fr 0.5fr ;
+    grid-template-areas:
+     "content1 content1 content1"
+      "content2 content2 content2"
+      "content3 content3 content3"
+}
+
+
+.content1{
+    /* background-color: aqua; */
+    grid-area:content1;
+    padding-top: 0px;
+    /* padding-bottom: 10px; */
+}
+.content2{
+    /* background-color: red; */
+    grid-area: content2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+
+}
+.content3{
+    /* background-color:yellow; */
+    grid-area:content3;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: white;
+}
+.navbar-section{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 20px;
+   
+    
+
+}
+.coin-logo{
+     width:200px;
+    height:170px; 
+    /* border: 1px solid yellow; */
+
+}
+.lakshmicon{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.thank-you-text{
+    color:white;
+    letter-spacing: 0.48px;
+    font-size: 35px;
+    font-weight: 900;
+   
+}
+.succes-text{
+    color:white;
+    margin-top: 50px;
+    letter-spacing: 0.48px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+.email-notification-text{
+    color:white;
+    margin-top: 15px;
+    letter-spacing: 0.48px;
+    font-size: 20px;
+    text-align: center;
+}
+.end-diwali-text{
+    color:white;
+    margin-top: 15px;
+    letter-spacing: 0.48px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content3{
+   
+    grid-area:content3 ;
+    text-align: center;
+}
+.logo{
+    width:160px;
+    height:80px;
+   
+    /* border:1px solid red; */
+
+}
+.logoicon{
+ 
+   
+    width:100%;
+    height:100%;
+    object-fit: contain;
+    
+}
+.navbar-text{
+    color:white;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    align-content: flex-end;
+    align-items: flex-end;
+
+}
+.web-text{
+    display: none;
+}
+@media (max-width: 896px) and (orientation: landscape) {
+    body {
+        background-size: auto;
+
+    }
+    .logoicon{
+        display: none ;
+    
+    }
+    .visit-text{
+        display: none;
+       
+    }
+    .coin-logo{
+        display: none  ;
+       }
+       .web-text{
+        display: block;
+    }
+
+}
+/* media queries when it is less thaan 500px */
+ @media only screen and (max-width:767px){ 
+    body{
+        overflow: hidden !important;
+    }
+    /* @media screen and (max-width: 500px){ */
+        .homepage-container{
+
+            height:100vh;
+            width:100%;
+      
+            grid-template-columns: 1fr  ;
+            grid-template-rows:0.5fr 3.5fr 1.0fr ;
+            /* grid-template-rows: 0.5fr 3.3fr 0.5fr ; */
+             grid-template-areas: 
+             "content1 "
+              "content2 "
+            "content3 "
+   
+    /* "content4"
+    "content5"
+   */
+   
+        }
+        .content2{
+            /* background-color: red; */
+            grid-area: content2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right:10px ;
+        
+        }
+        .content3{
+   
+            grid-area:content3 ;
+            text-align: center;
+            /* padding-top: 40px; */
+        }
+        .logoicon{
+            display: none ;
+        
+        }
+        .visit-text{
+            display: none;
+           
+        }
+        .coin-logo{
+            display: none  ;
+           }
+           .web-text{
+            display: block;
+        }
+        .navbar-text{
+            cursor: none;
+
+        }
+} 
