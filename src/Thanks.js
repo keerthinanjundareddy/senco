@@ -27,13 +27,13 @@ function Thanks() {
             <div className='succes-text'>We've successfully received your registration. </div>
             <div className='email-notification-text'>You'll be notified by email once your personalised prayer<br /> video for Ma Lakshmi is ready </div>
             <div className='end-diwali-text'>We at Senco wish you and your family a very happy <br /> Dhanteras and Diwali.</div>
-
+            </div>
         <div className='footer-section'> 
 
             <div className='footer-text'>*Terms and conditions apply</div>
 
             </div>
-        </div>
+       
       
     </div>
     </>
