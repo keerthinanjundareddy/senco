@@ -23,14 +23,14 @@ function Thanks() {
         </div>
         <div className='body-section'>
             <div className='coin-logo'><img src={lakshmicoin} alt="lakshmi-coin" className='lakshmicon'/></div>
-            <div className='thank-you-text'>Thank You!</div>
+            <div className='thank-you-text'><b>Thank You!</b></div>
             <div className='succes-text'>We've successfully received your registration. </div>
             <div className='email-notification-text'>You'll be notified by email once your personalised prayer<br /> video for Ma Lakshmi is ready </div>
             <div className='end-diwali-text'>We at Senco wish you and your family a very happy <br /> Dhanteras and Diwali.</div>
             </div>
         <div className='footer-section'> 
 
-            <div className='footer-text'>*Terms and conditions apply</div>
+            <div className='footer-text'>*Terms and Conditions apply</div>
 
             </div>
        

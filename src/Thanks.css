@@ -20,11 +20,14 @@ body{
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-right: 20px;
     /* padding:20px; */
     /* border: 1px solid blue; */
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
+  
+   
+   
     position: fixed;
    
     width:100%;
@@ -35,13 +38,17 @@ body{
 .logo{
     width:160px;
     height:80px;
+   
     /* border:1px solid red; */
 
 }
 .logoicon{
+ 
+   
     width:100%;
     height:100%;
     object-fit: contain;
+    
 }
 .navbar-text{
     color:white;
@@ -78,22 +85,24 @@ body{
     color:white;
     letter-spacing: 0.48px;
     font-size: 28px;
+    font-weight: 900;
 }
 .succes-text{
     color:white;
     margin-top: 50px;
     letter-spacing: 0.48px;
     font-size: 20px;
+    
 }
 .email-notification-text{
     color:white;
-    margin-top: 10px;
+    margin-top: 15px;
     letter-spacing: 0.48px;
     font-size: 20px;
 }
 .end-diwali-text{
     color:white;
-    margin-top: 10px;
+    margin-top: 15px;
     letter-spacing: 0.48px;
     font-size: 20px;
 }
@@ -110,6 +119,8 @@ body{
   }
   .footer-text{
     font-size: 15px;
+    letter-spacing: 0.3px;
+    font-weight: 100;
   }
   .coin-logo{
     display: block ;
@@ -120,10 +131,12 @@ body{
 }
 .visit-text{
     display: block;
+    font-weight: 100;
 }
 .web-text{
     display: none;
 }
+
 
 /* For landscape mode on mobile devices */
 @media (max-width: 896px) and (orientation: landscape) {
@@ -133,8 +146,8 @@ body{
    }
 .footer-section {
         position:absolute!important;
-        margin-top:20px ;
-        bottom: 0px !important;
+        margin-top:40px ;
+        bottom: 20px !important;
         left: 0;
         width: 100%;
         text-align: center;
@@ -150,9 +163,13 @@ body{
     }
     .visit-text{
         display: none;
+       
     }
     .web-text{
         display: block;
+    }
+    .navbar-text{
+        cursor: none;
     }
     /* Add more styles as needed for specific elements */
 }
@@ -178,9 +195,19 @@ body{
 }
 .visit-text{
     display: none;
+   
 }
 .web-text{
     display: block;
 }
+.navbar-text{
+    cursor: none;
+}
 
 }
+/* 
+/* @media (max-width: 1023px) {
+    .navbar-text{
+        cursor: none;
+    }
+} */ 
