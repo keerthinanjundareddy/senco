@@ -9,6 +9,11 @@ function Thanks() {
        
         window.open('https://sencogoldanddiamonds.com/', '_blank'); 
     }
+
+    function footerwebLink(){
+       
+        window.open('https://sencogoldanddiamonds.com/', '_blank'); 
+    }
   return (
     <>
     <div className='full-contianer'>
@@ -16,7 +21,7 @@ function Thanks() {
 
             <div className='logo'><img src={logo} alt="logo" className='logoicon'  /></div>
            
-            <div className='navbar-text' onClick={openwebLink}><span className='visit-text'>visit senco website</span><span className='web-text'><img src={webicon}alt="webicon" /></span></div>
+            <div className='navbar-text' onClick={openwebLink}><span className='visit-text'>Visit Senco Website</span><span className='web-text'><img src={webicon}alt="webicon" style={{width:"50px",height:"50px"}} /></span></div>
             
             
 
@@ -30,7 +35,7 @@ function Thanks() {
             </div>
         <div className='footer-section'> 
 
-            <div className='footer-text'>*Terms and Conditions apply</div>
+            <div className='footer-text' onClick={footerwebLink}>*Terms and Conditions apply</div>
 
             </div>
        
