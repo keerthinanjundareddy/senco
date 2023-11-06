@@ -141,10 +141,7 @@ body{
 
 /* For landscape mode on mobile devices */
 @media (max-width: 896px) and (orientation: landscape) {
-   body{
-    width:auto;
-    height:auto;
-   }
+ 
 .footer-section {
         position:absolute!important;
         margin-top:40px ;
