@@ -11,14 +11,15 @@ body{
     overflow:hidden !important; 
     background-image: url('../src/Assets/web-bg.png');
     /* background-color: red; */
-    background-size: cover ;
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Lato', sans-serif;
+  
 }
 .full-contianer{
     display: flex;
     flex-direction: column;
-    gap:20px;
+   
 
 }
 .navbar-section{
@@ -67,6 +68,8 @@ body{
     align-items: center;
     text-align: center;
     height: 100vh;
+   
+   
  
      /* Ensure the section takes the full viewport height */
   }
@@ -118,6 +121,7 @@ body{
    
     justify-content: flex-end;
     align-items: flex-end;
+    /* border:1px solid blue; */
   }
   .footer-text{
     font-size: 15px;
@@ -146,16 +150,20 @@ body{
     body{
         height:auto;
         overflow: scroll !important;
+        background-image: url('../src/Assets/web-bg.png');
+        /* background-color: red; */
+        background-size: auto ;
+        background-repeat: no-repeat;
     }
  
 .footer-section {
-        /* position:absolute; */
-        margin-top:40px ;
-        bottom: 20px !important;
-        left: 0;
-        width: 100%;
+        position:relative;
+        margin-top:0px  ;
+        bottom:20px !important;
+        left:0;
+        width:100%;
         text-align: center;
-        font-size: 14px; /* Adjust the font size as needed */
+        font-size:14px; /* Adjust the font size as needed */
     }
     
     .coin-logo{
