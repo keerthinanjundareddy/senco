@@ -9,6 +9,11 @@ function Thanks() {
        
         window.open('https://sencogoldanddiamonds.com/', '_blank'); 
     }
+
+    function footerwebLink(){
+       
+        window.open('https://sencogoldanddiamonds.com/', '_blank'); 
+    }
   return (
     <>
     <div className='full-contianer'>
@@ -16,21 +21,21 @@ function Thanks() {
 
             <div className='logo'><img src={logo} alt="logo" className='logoicon'  /></div>
            
-            <div className='navbar-text' onClick={openwebLink}><span className='visit-text'>visit senco website</span><span className='web-text'><img src={webicon}alt="webicon" /></span></div>
+            <div className='navbar-text' onClick={openwebLink}><span className='visit-text'>Visit Senco Website</span><span className='web-text'><img src={webicon}alt="webicon" style={{width:"50px",height:"50px"}} /></span></div>
             
             
 
         </div>
-        <div className='whole-section'>
+        <div className='body-section'>
             <div className='coin-logo'><img src={lakshmicoin} alt="lakshmi-coin" className='lakshmicon'/></div>
-            <div className='thank-you-text'>Thank You!</div>
+            <div className='thank-you-text'><b>Thank You!</b></div>
             <div className='succes-text'>We've successfully received your registration. </div>
             <div className='email-notification-text'>You'll be notified by email once your personalised prayer<br /> video for Ma Lakshmi is ready </div>
             <div className='end-diwali-text'>We at Senco wish you and your family a very happy <br /> Dhanteras and Diwali.</div>
             </div>
         <div className='footer-section'> 
 
-            <div className='footer-text'>*Terms and conditions apply</div>
+            <div className='footer-text' onClick={footerwebLink}>*Terms and Conditions apply</div>
 
             </div>
        
@@ -41,4 +46,3 @@ function Thanks() {
 }
 
 export default Thanks
-

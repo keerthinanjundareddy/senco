@@ -1,11 +1,12 @@
 import React from 'react'
-import Thankstwo from './Thankstwo'
+import Thanks from './Thanks'
+// import Thankstwo from './Thankstwo'
 
 function App() {
   return (
     <>
-      {/* <Thanks /> */}
-      <Thankstwo />
+      <Thanks />
+      {/* <Thankstwo /> */}
     </>
   )
 }

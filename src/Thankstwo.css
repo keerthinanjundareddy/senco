@@ -51,7 +51,7 @@ body {
 
    /* usualy it is like 1fr 1fr 1fr 1fr */
    /* grid-template-columns: 1.3fr 1.3fr 1.3fr ; */
-    height:100vh;
+    height:100vh !important;
     width:100%;
    
     /* dividing it into 4 rows */
@@ -177,9 +177,28 @@ body {
 }
 @media (max-width: 896px) and (orientation: landscape) {
     body {
-        background-size: auto;
+        overflow: scroll;
+        /* background-size: auto; */
 
     }
+    .homepage-container{
+        display:grid; 
+     
+        /* dividing it into 4 coloumns */
+     
+        /* usualy it is like 1fr 1fr 1fr 1fr */
+        /* grid-template-columns: 1.3fr 1.3fr 1.3fr ; */
+         /* height:auto; */
+         /* width:auto; */
+         overflow: scroll;
+        
+         /* dividing it into 4 rows */
+         grid-template-rows: 0.5fr 3.3fr 0.5fr ;
+         grid-template-areas:
+          "content1 content1 content1"
+           "content2 content2 content2"
+           "content3 content3 content3"
+     }
     .logoicon{
         display: none ;
     
